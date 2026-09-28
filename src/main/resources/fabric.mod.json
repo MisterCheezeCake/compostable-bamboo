@@ -1,33 +1,28 @@
 {
-	"schemaVersion": 1,
-	"id": "compostable-bamboo",
-	"version": "${version}",
-	"name": "Compostable Bamboo",
-	"description": "Makes bamboo compostable",
-	"authors": [
-		"MisterCheezeCake"
-	],
-	"contact": {
-		"homepage": "https://modrinth.com/mod/compostable-bamboo",
-		"sources": "https://github.com/MisterCheezeCake/compostable-bamboo",
-		"issues": "https://github.com/MisterCheezeCake/compostable-bamboo/issues"
-	},
-	"license": "LGPL-3.0-or-later",
-	"icon": "assets/compostable-bamboo/icon.png",
-	"environment": "*",
-	"mixins": [
-		"compostable-bamboo.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.16.13",
-		"minecraft": ">=1.14",
-		"java": ">=8"
-	},
-	"custom": {
-		"modmenu": {
-			"links": {
-				"modmenu.discord": "https://discord.gg/YH3hw926hz"
-			}
-		}
-	}
+    "schemaVersion": 1,
+    "id": "compostable-bamboo",
+    "version": "${version}",
+    "name": "Compostable Bamboo",
+    "description": "Makes bamboo compostable with a 30% chance, just like in real life.",
+    "authors": [
+        "MisterCheezeCake"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/mod/compostable-bamboo",
+        "sources": "https://github.com/MisterCheezeCake/CompostableBamboo"
+    },
+    "license": "LGPL-3.0-or-later",
+    "icon": "assets/compostable-bamboo/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "wtf.cheeze.bamboo.CompostableBamboo"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.19.5",
+        "minecraft": "~26.3",
+        "java": ">=25",
+        "fabric-api": "*"
+    }
 }
